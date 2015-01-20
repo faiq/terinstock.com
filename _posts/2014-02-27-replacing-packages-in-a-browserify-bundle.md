@@ -69,6 +69,6 @@ With this information in hand, it became clear that we needed to swap in the `un
 
 This causes the swap to happen for each instance of Underscore in the bundle, but only the one instance of Lo-Dash would be included.
 
-It's also worth noting that the browserify-swap package needs a `ROWSERIFYSWAP_ENV` enviorment variable in order for the transform to run. So when you bundle your files you should include the enviorment variable `ROWSERIFYSWAP_ENV=all browserify myapp.js` in order to make sure that the transform runs.
+It's also worth noting that the browserify-swap package needs a `BROWSERIFYSWAP_ENV` enviorment variable in order for the transform to run. So when you bundle your files you should include the enviorment variable `BROWSERIFYSWAP_ENV=all browserify myapp.js` in order to make sure that the transform runs.
 
 I believe that the transform should also allow swapping packages for other packages, as the folder structure of a package is usually not part of the public API. I've [opened an issue](https://github.com/thlorenz/browserify-swap/issues/1) against the project.
